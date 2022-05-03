@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de Cliente</title>
+    <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+</head>
+<body>
+    <main>
+    <form action = "" method = "get">
+        
+        <h1>Ingresar Datos del Cliente</h1>
+        <p>
+           <strong>Nombres:</strong> <input type = "text" maxlength="40" id ="nombre" name = "name_control" > 
+        </p>
+        <p>
+            <strong>Apellidos:</strong> <input type = "text" maxlength="40" id ="apellido" name = "name_control" > 
+        </p>
+        <p>
+            <strong>Cedula:</strong> <input type = "number" id ="cedula"  name = "name_control"  > 
+        </p>
+        <p>
+            <strong>Telefono:</strong> <input type = "number"  id ="telefono" name = "name_control"   > 
+        </p>
+        
+        <p>
+            <strong>Email:</strong> <input type = "email"  id ="correo" maxlength="40" name = "name_control" > 
+        </p>
+        <p>
+            <strong>Fecha Nacimiento:</strong> <input type = "date"  id ="edad" name = "name_control" > 
+        </p>
+
+        <p>
+            <strong>Direccion:</strong> <input type = "text"  id ="direccion" name = "name_control" > 
+        </p>
+        
+        <p>
+            <strong>Ciudad:</strong> <input type = "text" maxlength="50" id ="ciudad" name = "name_control" > 
+        </p>
+
+        <div class="provincia">
+            <p><strong>Provincia/Region:</strong></p>
+                <select name="job_control">
+                  <option value="" selected>Elegir provincia</option>
+                  <option value="">Azuaz</option>
+                  <option value="">Cañar</option>
+                  <option value="">El oro</option>
+                  <option value="">Guayas</option>
+                  <option value="">Manabi</option>
+                  <option value="">Otros..</option>
+                </select>
+        </div>   
+
+            <input type="submit" value ="Enviar" onclick="Crearformulario()">
+            <input type="reset" value ="Eliminar">
+
+    
+    </form>
+    <script src= "script.js"></script>
+</main>
+</body>
+</html>
